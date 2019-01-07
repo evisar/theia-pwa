@@ -2,12 +2,31 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <script type="text/javascript" src="./bundle.js" charset="utf-8"></script>
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="theia-logo-no-text-black.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="theme-color" content="#1e1e1e" />
+	<meta name="Description" content="Eclipse Theia">
+	<link rel="manifest" href="manifest.json" />
+	<title>Eclipse Theia</title>
+	<script type="text/javascript" src="./bundle.js" charset="utf-8">
+	</script>
 </head>
 
 <body>
-  <div class="theia-preload"></div>
+	<div class="theia-preload"></div>
 </body>
+
+<script>
+	if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .catch(err => {
+          console.log(`Service Worker registration failed: ${err}`);
+        });
+    });
+  }
+
+</script>
 
 </html>

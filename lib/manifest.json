@@ -1,0 +1,19 @@
+{
+  "short_name": "Eclipse Theia",
+  "name": "Eclipse Theia",
+  "icons": [{
+      "src": "theia-logo-no-text-white.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "theia-logo-no-text-white.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1e1e1e",
+  "background_color": "#ffffff"
+}
